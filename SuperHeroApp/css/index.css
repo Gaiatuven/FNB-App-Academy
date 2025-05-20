@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #31404D;
+}
+
+.gallery-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.gallery-container img {
+    border: 2px solid #13446e;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#avenger-1:hover {
+    border-color: gray;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#avenger-2:hover {
+    border-color: red;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#avenger-3:hover {
+    border-color: green;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#avenger-4:hover {
+    border-color: black;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#avenger-5:hover {
+    border-color: blue;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#avenger-6:hover {
+    border-color: black;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}

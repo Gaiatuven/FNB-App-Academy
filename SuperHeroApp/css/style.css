@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /* It's generally good practice to style the body for overall layout */
+    font-family: 'Roboto', sans-serif; /* Apply font to the body */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top initially */
+    background-color: #f0f0f0; /* A subtle background color can be nice */
+}
+
+.main-image  {
+    background-image: url('/images/Logo-avengers-wallpaper-HD.png');
+    background-size: cover;
+    background-position: center; /* Center the image within its container */
+    height: 600px; /* Adjust as needed */
+    width: 80%; /* Make it responsive within its container */
+    max-width: 1200px; /* Set a maximum width if needed */
+    margin-top: 20px; /* Add some top margin */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    display: flex; /* Enable flexbox for potential overlays */
+    justify-content: center;
+    align-items: center;
+    color: white; /* For potential text overlays */
+    font-size: 2em; /* Example text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Example text shadow */
+}
+
+.btn-container {
+    margin-top: 30px; /* Adjust spacing between image and button */
+}
+
+.btn {
+    font-size: 20px; /* Slightly reduced for better readability */
+    background-color: #13446e;
+    color: white;
+    padding: 12px 24px; /* Slightly adjusted padding */
+    border-radius: 10px; /* Slightly adjusted border-radius */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #1a5991; /* Darker shade on hover */
+}
+
+h1 {
+    color: #333; /* Darker, more readable color */
+    font-size: 32px; /* Slightly reduced for balance */
+    font-weight: 700; /* Make it bolder */
+    text-align: center;
+    margin-top: 30px; /* Consistent top margin */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
