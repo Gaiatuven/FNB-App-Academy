@@ -1,42 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body { /* It's generally good practice to style the body for overall layout */
-    font-family: 'Roboto', sans-serif; /* Apply font to the body */
-    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically by default */
-    align-items: center; /* Center items horizontally */
-    justify-content: flex-start; /* Align items to the top initially */
-    background-color: #f0f0f0; /* A subtle background color can be nice */
+body {
+  /* It's generally good practice to style the body for overall layout */
+  font-family: "Roboto", sans-serif; /* Apply font to the body */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top initially */
+  background-color: #f0f0f0; /* A subtle background color can be nice */
 }
 
-.main-image  {
-    background-image: url('/images/Logo-avengers-wallpaper-HD.png');
-    background-size: cover;
-    background-position: center; /* Center the image within its container */
-    height: 600px; /* Adjust as needed */
-    width: 80%; /* Make it responsive within its container */
-    max-width: 1200px; /* Set a maximum width if needed */
-    margin-top: 20px; /* Add some top margin */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    display: flex; /* Enable flexbox for potential overlays */
-    justify-content: center;
-    align-items: center;
-    color: white; /* For potential text overlays */
-    font-size: 2em; /* Example text size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Example text shadow */
+.main-image-section {
+  /* Renamed for clarity */
+  background-image: url("/images/main-characters.jpg"); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack text and button */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  /* No need for color, font-size, text-shadow here if they are on h1/button */
 }
 
-.btn-container {
-    margin-top: 30px; /* Adjust spacing between image and button */
+/* If you want "Welcome Avenger" to be on the image */
+.main-image-section h1 {
+  color: white; /* Text color for h1 on the image */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for h1 on the image */
+  margin-top: 0; /* Adjust as needed */
+  margin-bottom: 20px;
 }
 
-.btn {
+/* If you want the button to be on the image */
+.main-image-section .btn {
     font-size: 20px; /* Slightly reduced for better readability */
     background-color: #13446e;
     color: white;
@@ -46,15 +52,22 @@ body { /* It's generally good practice to style the body for overall layout */
     transition: background-color 0.3s ease; /* Add a smooth hover effect */
 }
 
+.btn-container {
+  /* This div would be inside .main-image-section */
+  /* This can be removed or used for specific grouping */
+  margin-top: 0; /* Adjust or remove as needed */
+}
+
+
 .btn:hover {
-    background-color: #1a5991; /* Darker shade on hover */
+  background-color: #1a5991; /* Darker shade on hover */
 }
 
 h1 {
-    color: #333; /* Darker, more readable color */
-    font-size: 32px; /* Slightly reduced for balance */
-    font-weight: 700; /* Make it bolder */
-    text-align: center;
-    margin-top: 30px; /* Consistent top margin */
-    margin-bottom: 20px; /* Add some bottom margin */
+  color: #333; /* Darker, more readable color */
+  font-size: 32px; /* Slightly reduced for balance */
+  font-weight: 700; /* Make it bolder */
+  text-align: center;
+  margin-top: 30px; /* Consistent top margin */
+  margin-bottom: 20px; /* Add some bottom margin */
 }
