@@ -4,6 +4,8 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
+/* ============ HEADER =========== */
+
 #header {
     position: fixed;
     top: 0px;
@@ -20,4 +22,50 @@ body {
     margin: auto;
     height: 70%;
     padding-top: 15px;
+}
+
+/* ============ TABS TOP =========== */
+
+/* ============ TABS TOP (Corrected with Flexbox) =========== */
+
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0; /* Changed from 0px for consistency */
+    z-index: 500;
+    width: 100%; /* Corrected: Make the navigation bar span full width */
+    height: 40px;
+    background-color: #006400;
+    /* No need for text-align here, Flexbox handles alignment */
+}
+
+#tabs-top ul {
+    display: flex; /* Make the ul a flex container */
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: center; /* Vertically center the list items */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure the ul takes up the full height of its parent #tabs-top */
+    width: 100%; /* Ensure the ul spans the full width of its parent */
+}
+
+#tabs-top li {
+    /* No need for float or fixed width on li when using Flexbox */
+    flex-grow: 1; /* Allows li items to grow and take up available space */
+    text-align: center; /* Centers the text within each li before the anchor */
+}
+
+#tabs-top li > a {
+    /* Remove float: left; and explicit width: 33%; */
+    display: flex; /* Make the anchor itself a flex container */
+    justify-content: center; /* Horizontally center the text within the anchor */
+    align-items: center; /* Vertically center the text within the anchor */
+    height: 100%; /* Make the anchor fill the height of its li parent */
+    width: 100%; /* Make the anchor fill the width of its li parent */
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 0; /* Remove padding-top: 12px; as align-items: center handles vertical centering */
+    box-sizing: border-box; /* Ensures padding/border are included in the element's total width/height */
 }
