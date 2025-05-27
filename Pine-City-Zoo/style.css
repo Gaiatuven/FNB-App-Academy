@@ -67,3 +67,9 @@ body {
     padding: 0; 
     box-sizing: border-box; 
 }
+
+/* ============ MAIN CONTAINER =========== */
+
+#main-home {
+    margin-top: 120px;
+}
