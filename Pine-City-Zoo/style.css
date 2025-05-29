@@ -109,3 +109,56 @@ a.info-box {
   margin-top: 25px;
   height: 40px;
 }
+
+.animal-image {
+  width: 100%;
+}
+
+.animal-description {
+  text-decoration: none;
+  background: rgba(225, 225, 225, 0.8);
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+.animal-info h2 {
+  padding: 0;
+  margin-bottom: 0;
+  color: #572800;
+}
+/* .wrapper {
+  background-image: url("/images/map-blur.png");
+} */
+
+#info-box-full {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 10px;
+}
+#info-box-full img {
+  width: 100%;
+}
+#info-box-full h3 {
+  text-align: center;
+}
+
+#info-box-full {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 10px;
+}
+#info-box-full img {
+  width: 100%;
+}
+#info-box-full h3 {
+  text-align: center;
+}
