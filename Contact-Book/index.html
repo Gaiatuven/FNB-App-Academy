@@ -17,15 +17,14 @@
     <div class="wrapper">
         <div class="heading-section">
             <h2>Contacts Loading .....</h2>
-            <button id="refresh" type="button">Refresh</button>
-            <button id="addContact" type="button">Add Contact</button>
+            <a href="#" id="refresh" type="button">Refresh</a>
+            <a href="/add-contact.html" id="addContact" type="button">Add Contact</a>
         </div>
         <div id="table">
 
         </div>
     </div>
     <script src="/config.js"></script>
-    <script src="/main.js"></script>
     <script>
         
         document.getElementById("refresh").addEventListener('click', fetchContacts)
