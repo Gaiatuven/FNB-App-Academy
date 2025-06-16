@@ -1,34 +1,135 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* public/style.css */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .wrapper {
-    max-width: 600px;
-    height: 400px;
-    margin: 100px auto;
-    border: 1px solid black;
-    box-shadow: 2px 2px 5px #888888;
-    border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 h2 {
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-    font-family: 'lato', sans-serif;
+  color: #0056b3;
 }
 
-#refresh {
-    margin: 5px;
-    padding: 5px;
-    font-family: 'lato', sans-serif;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+img {
+  border-radius: 90%;
 }
 
 #addContact {
-    margin: 5px;
-    padding: 5px;
-    font-family: 'lato', sans-serif;
+  font-family: 'lato', sans-serif;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#refresh {
+  font-family: 'lato', sans-serif;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#refresh:hover {
+  background-color: #0056b3;
+}
+
+#addContact {
+  background-color: #007bff;
+  color: white;
+}
+
+#addContact:hover {
+  background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+  max-width: 400px;
+  height: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+label[for="firstname"],
+label[for="lastname"],
+label[for="mobile"],
+label[for="email"],
+label[for="avatar"] {
+  padding: 5px;
+  color: darkblue;
+  font-family: 'lato', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+input#firstname,
+input#lastname,
+input#mobile,
+input#email,
+input#avatar {
+  margin: 5px;
+  padding: 4px;
+  color: darkblue;
+  font-size: 1.1em;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+#submitForm {
+font-family: 'lato', sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; 
+  display: inline-block;
 }
