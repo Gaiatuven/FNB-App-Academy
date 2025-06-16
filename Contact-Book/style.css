@@ -134,3 +134,28 @@ font-family: 'lato', sans-serif;
   text-decoration: none; 
   display: inline-block;
 }
+
+.edit-submit {
+  margin-top: 10px;
+}
+
+#home-container {
+  display: flex;
+  justify-content: space-between;
+}
+#editContact,
+#deleteContact,
+#homeLink {
+  justify-content:space-around;
+  font-family: 'lato', sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; 
+}
